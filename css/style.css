@@ -1,0 +1,455 @@
+body {
+    background-color: #D9C8B4;
+    font-family: "Times New Roman", Georgia, serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: #2E2419;
+}
+
+.container {
+    background-color: #F5F0E8;
+
+    width: 90%;
+    max-width: 1050px;
+    min-height: 650px;
+
+    margin: auto;
+
+    border-radius: 4px;
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba(70, 50, 30, 0.18);
+
+    padding: 55px;
+
+    box-sizing: border-box;
+}
+
+
+/* LADO ESQUERDO */
+
+.container::before {
+    content: "NUANCE\A\A Faça o teste e descubra qual perfil mais combina com você.";
+
+    white-space: pre-line;
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 34%;
+    height: 100%;
+
+    background-image:
+        linear-gradient(
+            rgba(89, 62, 28, 0.38),
+            rgba(89, 62, 28, 0.65)
+        ),
+        url("../imagens/aura.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #F5F0E8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 45px;
+
+    box-sizing: border-box;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+
+    font-weight: normal;
+
+    line-height: 1.35;
+}
+
+
+/* TITULO */
+
+h1 {
+    color: #593E1C;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    font-weight: normal;
+
+    letter-spacing: 1px;
+
+    margin: 0 0 12px;
+
+    text-align: center;
+
+    width: 58%;
+
+    margin-left: 37%;
+}
+
+
+/* TEXTO ABAIXO DO TITULO */
+
+.container > p {
+    color: #8C7961;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    width: 58%;
+
+    margin-left: 37%;
+
+    margin-bottom: 40px;
+}
+
+
+/* FORMULARIO */
+
+form {
+    width: 58%;
+
+    margin-left: 37%;
+
+    margin-right: 0;
+}
+
+
+/* LABEL DO NOME E DATA */
+
+form > label {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    color: #593E1C;
+
+    font-size: 17px;
+
+    text-align: left;
+}
+
+
+/* CAMPOS */
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 8px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #C8B8A4;
+
+    border-radius: 2px;
+
+    background-color: #FCFAF6;
+
+    color: #593E1C;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    outline: none;
+
+    border-color: #8C7961;
+
+    background-color: white;
+}
+
+
+/* PERGUNTAS */
+
+form h3 {
+    color: #593E1C;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    line-height: 1.4;
+
+    text-align: center;
+
+    margin-top: 42px;
+
+    margin-bottom: 22px;
+}
+
+
+/* ALTERNATIVAS */
+
+form h3 ~ label {
+    display: block;
+
+    width: 80%;
+
+    margin: 14px auto;
+
+    color: #6F604F;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    line-height: 1.4;
+
+    text-align: left;
+}
+
+
+/* RADIO */
+
+input[type="radio"] {
+    margin-right: 9px;
+
+    accent-color: #593E1C;
+
+    transform: scale(1.05);
+}
+
+
+/* BOTÃO */
+
+button {
+    display: block;
+
+    margin: 42px auto 15px;
+
+    padding: 14px 38px;
+
+    background-color: #593E1C;
+
+    color: #F5F0E8;
+
+    border: none;
+
+    border-radius: 2px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #8C7961;
+}
+
+
+/* RESULTADO */
+
+#resultado {
+    width: 58%;
+
+    margin-left: 37%;
+
+    margin-top: 55px;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    border-top: 1px solid #C8B8A4;
+}
+
+#resultado h2 {
+    color: #593E1C;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+
+    font-weight: normal;
+
+    letter-spacing: 0.5px;
+}
+
+#resultado p {
+    color: #6F604F;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+}
+
+#resultado img {
+    width: 280px;
+
+    max-width: 100%;
+
+    margin-top: 20px;
+
+    border-radius: 2px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+
+        padding: 35px;
+
+        min-height: auto;
+    }
+
+
+    .container::before {
+        position: relative;
+
+        display: flex;
+
+        width: calc(100% + 70px);
+
+        height: 230px;
+
+        margin: -35px -35px 35px;
+
+        font-size: 27px;
+    }
+
+
+    h1 {
+        width: 100%;
+
+        margin-left: 0;
+
+        font-size: 35px;
+    }
+
+
+    .container > p {
+        width: 100%;
+
+        margin-left: 0;
+
+        font-size: 17px;
+    }
+
+
+    form {
+        width: 100%;
+
+        margin-left: 0;
+    }
+
+
+    form h3 {
+        font-size: 20px;
+    }
+
+
+    form h3 ~ label {
+        width: 90%;
+
+        font-size: 16px;
+    }
+
+
+    #resultado {
+        width: 100%;
+
+        margin-left: 0;
+    }
+
+
+    button {
+        width: 100%;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 22px;
+    }
+
+
+    .container::before {
+        width: calc(100% + 44px);
+
+        height: 190px;
+
+        margin: -22px -22px 25px;
+
+        font-size: 23px;
+    }
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+    .container > p {
+        font-size: 16px;
+    }
+
+
+    form h3 {
+        font-size: 18px;
+
+        margin-top: 32px;
+    }
+
+
+    form h3 ~ label {
+        width: 100%;
+
+        font-size: 15px;
+    }
+
+
+    #resultado {
+        padding: 20px;
+    }
+}
